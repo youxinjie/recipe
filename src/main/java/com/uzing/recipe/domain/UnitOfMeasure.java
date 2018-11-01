@@ -18,4 +18,12 @@ public class UnitOfMeasure {
     @OneToOne
     private Ingredient ingredient;
     private String description;
+
+    public UnitOfMeasure() {
+    }
+
+    protected boolean canEqual(Object other) {
+        return other instanceof UnitOfMeasure;
+    }
+
 }
