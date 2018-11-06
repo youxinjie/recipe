@@ -15,15 +15,6 @@ public class UnitOfMeasure {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    private Ingredient ingredient;
     private String description;
-
-    public UnitOfMeasure() {
-    }
-
-    protected boolean canEqual(Object other) {
-        return other instanceof UnitOfMeasure;
-    }
 
 }
